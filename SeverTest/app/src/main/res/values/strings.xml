@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name"> NAVI</string>
+    <string name="now_loading">NOW LOADING</string>
+    <string name="avatar_name">JOCKER</string>
+    <string name="title_activity_user">NAVI</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Logout</string>
+</resources>

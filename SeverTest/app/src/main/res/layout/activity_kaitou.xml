@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_qq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_layout" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/message_chat_listview"
+        android:background="@color/white"
+        />
+    <alicewithrabbit.severtest.view.DropDownListView
+        android:id="@+id/message_chat_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@id/header"
+        android:background="@color/top_bg_color"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:listSelector="@color/transparent"
+        />
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/chat_bottom_shape" >
+
+
+
+        <EditText
+            android:id="@+id/input_sms"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="3dip"
+            android:layout_toLeftOf="@+id/send_sms"
+            android:background="@drawable/button_shape"
+            android:hint="Please enter the message"
+
+            android:textColorHint="@color/white"
+            android:padding="6dip"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/send_sms"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/input_sms"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/input_sms"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="6dip"
+            android:background="@drawable/button_shape"
+            android:gravity="center"
+            android:text="send"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+</RelativeLayout>

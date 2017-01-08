@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/cheader"
+        layout="@layout/chara_choose_header" />
+    <ListView
+        android:id="@+id/chara_list"
+        android:layout_below="@+id/cheader"
+        android:layout_above="@+id/bottom1"
+        android:background="@color/top_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:id="@+id/bottom1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top_bg_color"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
